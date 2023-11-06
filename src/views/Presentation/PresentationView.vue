@@ -77,6 +77,7 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <PresentationCounter />
     <PresentationInformation />
+    <h2 class="width-100 text-center">Napadlo Vás něco? Napište nám!</h2>
     <MaterialForm />
   </div>
   <DefaultFooter />
