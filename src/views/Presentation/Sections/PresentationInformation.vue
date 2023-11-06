@@ -12,9 +12,8 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
           <RotatingCard>
             <RotatingCardFront
               image="https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-              icon="touch_app"
-              title="Naše Nejlepší <br /> Produkty"
-              description="Máme tu pro vás všechno, co vaše tělo potřebuje"
+              title="FORMAMNON"
+              description="Produkt, který chrání Vaši pokožku a revitalizuje kůži"
             />
 
             <RotatingCardBack
@@ -42,15 +41,15 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
             <DefaultInfoCard
               icon="flip_to_front"
               title="Obnova kůže"
-              description="bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque"
+              description=""
             />
           </div>
           <div class="row justify-content-start mt-5">
             <DefaultInfoCard
               class="mt-3"
               icon="price_change"
-              title="Ušetři peníze a uzdrav tělo"
-              description="Už nekupujte chemické masky a krémy! S námi jsou 100% přírodní"
+              title="Genialita Formanonu je v jednoduchosti"
+              description="Jelikož obsahuje pouze 7 látek, je jednoduchý a tedy jedinečný"
             />
             <DefaultInfoCard
               class="mt-3"

@@ -35,10 +35,10 @@ export default {
     sendEmail(e) {
       try {
         emailjs.sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
+          "service_6uetk0k",
+          "template_sd27c4g",
           e.target,
-          "YOUR_USER_ID",
+          "Din7bCPCNolUPSp1u",
           {
             name: this.name,
             email: this.email,
