@@ -12,8 +12,8 @@
         <div class="col-lg-4 ms-auto mt-lg-0 mt-6" style="text-align: center">
           <h2>Kde se nacházíme?</h2>
           <h4>Guadium 2022 s.r.o.</h4>
-          <h4>tř. Budovatelů 2327/106</h4>
-          <h4>Most 434 01</h4>
+          <h4>Moskevská 14</h4>
+          <h4>Most 1 434 01</h4>
           <h4>Česká republika</h4>
         </div>
       </div>

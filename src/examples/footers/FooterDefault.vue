@@ -26,7 +26,7 @@ defineProps({
             name: "Guadium 2022 s.r.o.",
           },
           {
-            name: "tř. Budovatelů 2327/106",
+            name: "Moskevská 14",
           },
           {
             name: "Most",
