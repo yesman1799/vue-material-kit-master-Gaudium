@@ -13,11 +13,10 @@ const props = defineProps({
     type: Object,
     route: String,
     color: String,
-    label: String,
     default: () => ({
       route: "/",
       color: "bg-gradient-success",
-      label: "Kontaktujte nás"
+      label: "nav.contact"
     })
   },
   transparent: {
@@ -141,7 +140,7 @@ watch(
                 :class="getTextColor()"
                 >dashboard</i
               >
-              Stránky
+              {{ $t('nav.slides') }}
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -164,13 +163,13 @@ watch(
                       <div
                         class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
                       >
-                        Vyberte možnost
+                        {{ $t('nav.options') }}
                       </div>
                       <RouterLink
                         :to="{ name: 'about' }"
                         class="dropdown-item border-radius-md"
                       >
-                        <span>O nás</span>
+                        <span>{{ $t('nav.about') }}</span>
                       </RouterLink>
                       <!-- <RouterLink
                         :to="{ name: 'author' }"
@@ -186,13 +185,13 @@ watch(
                 <div
                   class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
                 >
-                  Vyberte možnost
+                {{ $t('nav.options')}}
                 </div>
                 <RouterLink
                   :to="{ name: 'about' }"
                   class="dropdown-item border-radius-md"
                 >
-                  <span>O nás</span>
+                  <span>{{ $t('nav.options') }}</span>
                 </RouterLink>
                 <RouterLink
                   :to="{ name: 'author' }"
@@ -427,7 +426,7 @@ watch(
               class="btn btn-sm mb-0"
               :class="action.color"
               onclick="smoothToPricing('pricing-soft-ui')"
-              >{{ action.label }}</a
+              >{{ $t('nav.contact') }}</a
             >
           </li>
         </ul>

@@ -6,6 +6,7 @@ import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
 import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
+import DisplayImages from "../../components/DisplayImages.vue";
 
 //Vue Material Kit 2 components
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
@@ -63,10 +64,10 @@ onUnmounted(() => {
               class="text-white pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ' }"
             >
-              Vítejte
+            {{ $t('header.title') }}
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Na stránce Gaudium 2022
+            {{ $t('header.underTitle') }}
             </p>
           </div>
         </div>
@@ -77,7 +78,9 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <PresentationCounter />
     <PresentationInformation />
-    <h2 class="width-100 text-center">Napadlo Vás něco? Napište nám!</h2>
+    <DisplayImages />
+    <h2 class="width-100 text-center">{{ $t('form.title') }}</h2>
+    
     <MaterialForm />
   </div>
   <DefaultFooter />

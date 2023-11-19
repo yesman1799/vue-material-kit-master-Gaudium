@@ -35,7 +35,7 @@ defineProps({
         ],
       },
       {
-        name: "Kontaktujte nás",
+        name: "{{ $t('nav.contact') }}",
         items: [
           {
             name: "gaudium2022@seznam.cz",

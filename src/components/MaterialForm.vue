@@ -1,21 +1,21 @@
 <template>
   <div class="container">
     <form>
-      <label>Jméno a příjmení</label>
-      <input type="text" v-model="name" name="name" placeholder="Jméno" />
-      <label>Email</label>
-      <input type="email" v-model="email" name="email" placeholder="Email" />
-      <label>Zpáva</label>
+      <label>{{ $t('form.nameLabel') }}</label>
+      <input type="text" v-model="name" name="name" :placeholder="$t('form.nameLabel')" />
+      <label>{{ $t('form.emailLabel') }}</label>
+      <input type="email" v-model="email" name="email" :placeholder="$t('form.emailLabel')" />
+      <label>{{ $t('form.messageLabel') }}</label>
       <textarea
         name="message"
         v-model="message"
         cols="30"
         rows="5"
-        placeholder="Zpáva"
+        :placeholder="$t('form.messageLabel')"
       >
       </textarea>
 
-      <input type="submit" value="Poslat" />
+      <input type="submit" :value="$t('form.send')" />
     </form>
   </div>
 </template>

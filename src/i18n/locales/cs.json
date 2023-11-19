@@ -1,0 +1,44 @@
+{
+"nav": {
+    "slides": "Stránky",
+    "options": "Vyberte možnost",
+    "about": "O nás",
+    "contact": "Kontaktujte nás"
+},
+"header": {
+    "title": "Vítejte",
+    "underTitle": "Na stránce Gaudium 2022"
+},
+"dynamicCards": {
+    "firstTitle": "Podpora Ukrajiny",
+    "firstText": "Sláva Ukrajině! Hrdinům Sláva!",
+    "secondTitle": "Tuzemská firma",
+    "secondText": "Česká firma založena roku 2022",
+    "thirdTitle": "Support",
+    "thirdText": "Máme 24/7 podporu prostřednictvím chatbota"
+},
+"infoCards": {
+    "firstTitle": "Přírodní léčiva",
+    "firstText": "Produkt je vytvořen 100% z přírodních látek.",
+    "secondTitle": "Intenzivní obnova kůže",
+    "secondText":"Výborné na kožní rány, kousance, štípance od obtížného hmyzu, mykózy, pupínky, škrábance, přírodní výroba produktu.",
+    "thirdTitle": "Genialita Formamnonu je v jednoduchosti",
+    "thirdText":"Jelikož obsahuje pouze 7 látek, je jednoduchý a tedy jedinečný.",
+    "fourthTitle": "Bezkonkurenční na trhu",
+    "fourthText":"Přípravek lze použít nejen na mykotické postižení prstů u nohou, ale opravdu na mnoho dalších kožních postižení po celém těle."
+},
+"rotatingCard": {
+    "frontTitle": "FORMAMNON",
+    "frontText":
+    "Formmanmnom je jedinečný produkt starých mistrů upravený do současné podoby dermatologem s více jak 40ti letou praxí.",
+    "backTitle": "Popis Formamnonu",
+    "backText":"Formamnon je odzkoušený na mnoha pacientech se statisticky významným účinkem, zejména pokud jde o mykózy nejen na prstech nohou. Genialita Formanonu je v jednoduchosti, Xylopie spolu s tea tree olejem vykazují silnou antimikrobiální a antimykotickou účinnost. Taktéž šalvěj má rovněž příznivé účinky na pleť a snižuje nadměrné pocení. Účinek je navíc posílen konzervačním přípravkem s obsahem stříbra určeným pro kosmetické produkty tohoto typu a hlavně s neurodipeptidem alaptidem, jehož obecné regenerační účinky jsou dostatečně známy díky jeho fenomenálnímu mechanismu účinku jeho působení."
+},
+"form": {
+    "title": "Napadlo Vás něco? Napište nám!",
+    "nameLabel": "Jméno a příjmení",
+    "emailLabel": "Email",
+    "messageLabel": "Zpáva",
+    "send": "Poslat"
+}
+}

@@ -11,8 +11,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Podpora Ukrajiny"
-                description="Слава Україні! Героям слава!"
+                :title="$t('dynamicCards.firstTitle')"
+                :description="$t('dynamicCards.firstText')"
                 :count="70"
                 suffix="+"
                 :duration="3000"
@@ -22,9 +22,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative year">
               <DefaultCounterCard
                 color="success"
-                title="Tuzemská firma"
-                description="Česká firma založena roku 2022"
-                :count="2022"
+                :title="$t('dynamicCards.secondTitle')"
+                :description="$t('dynamicCards.secondText')"
+                :count="Number(2022)"
                 suffix=""
                 :duration="3000"
                 divider="vertical"
@@ -33,8 +33,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4">
               <DefaultCounterCard
                 color="success"
-                title="support"
-                description="Máme 24/7 podporu prostřednictvím chatbota"
+                :title="$t('dynamicCards.thirdTitle')"
+                :description="$t('dynamicCards.thirdText')"
                 :count="24"
                 suffix=" / 7"
                 :duration="3000"

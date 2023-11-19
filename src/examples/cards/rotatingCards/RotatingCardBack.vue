@@ -30,9 +30,9 @@ defineProps({
     }"
   >
     <div class="card-body pt-7 text-center">
-      <h3 class="text-white" v-html="title"></h3>
+      <h3 class="text-white" v-html="$t('rotatingCard.backTitle')"></h3>
       <p class="text-white opacity-8">
-        {{ description }}
+        {{ $t('rotatingCard.backText') }}
       </p>
       <div class="buttons-group">
         <a

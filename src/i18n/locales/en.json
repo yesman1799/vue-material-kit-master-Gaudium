@@ -1,0 +1,43 @@
+{
+"nav": {
+    "slides": "Pages",
+    "options": "Select options",
+    "about": "About us",
+    "contact": "Contact us"
+},
+"header": {
+    "title": "Welcome",
+    "underTitle": "On our website Gaudium 2022"
+},
+"dynamicCards": {
+    "firstTitle": "We support Ukraine",
+    "firstText": "Glory to Ukraine! Glory to the heroes!",
+    "secondTitle": "Domestic company",
+    "secondText": "Czech company founded in 2022",
+    "thirdTitle": "Support",
+    "thirdText": "We have 24/7 chatbot support"
+},
+"infoCards": {
+    "firstTitle": "Natural remedies",
+    "firstText": "The product is made from 100% natural substances.",
+    "secondTitle": "Intensive skin renewal",
+    "secondText": "Excellent for skin wounds, bites, stings from difficult insects, mycosis, pimples, scratches, natural production of the product.",
+    "thirdTitle": "The genius of Formamnon is in its simplicity",
+    "thirdText": "As it contains only 7 substances, it is simple and therefore unique.",
+    "fourthTitle": "Unrivaled on the market",
+    "fourthText": "The preparation can be used not only for mycotic lesions of the toes, but indeed for many other skin lesions all over the body."
+},
+"rotatingCard": {
+    "frontTitle": "FORMAMNON",
+    "frontText": "Formmanmnom is a unique product of the old masters adapted to its current form by a dermatologist with more than 40 years of experience.",
+    "backTitle": "Formamnon description",
+    "backText": "Formamnon has been tested on many patients with a statistically significant effect, especially when it comes to mycoses not only on the toes. The genius of Formanon is in its simplicity, Xylopia together with tea tree oil show a strong antimicrobial and antifungal effect. Sage also has beneficial effects on the skin and reduces excessive sweating. In addition, the effect is enhanced by a preservative containing silver intended for cosmetic products of this type and mainly by the neurodipeptide alaptide, whose general regenerative effects are well known due to its phenomenal mechanism of action."
+},
+"form": {
+    "title": "Did you think of anything? Write us!",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "send": "Send"
+}
+}

@@ -15,11 +15,8 @@ defineProps({
     default: 4000,
   },
   title: {
-    type: String,
-    required: true,
   },
   description: {
-    type: String,
     required: true,
   },
   color: {
