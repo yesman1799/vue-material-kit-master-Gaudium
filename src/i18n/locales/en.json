@@ -39,5 +39,24 @@
     "emailLabel": "Email",
     "messageLabel": "Message",
     "send": "Send"
-}
+},
+"footer": {
+    "location": "Branch location",
+    "contact": "Contact",
+    "companyName": "Gaudium 2022",
+    "address": "Moskevská 14", 
+    "city": "Most",
+    "country": "Czech Republic"
+  },
+  "aboutus": {
+    "header": {
+        "title": "Come and meet us",
+        "span1": "more",
+        "span2": "healthy",
+        "span3": "closer",
+        "underTitle": "We are a company that cares about your health"
+    },
+    "mapTitle": "Where are we located?",
+    "mapCountry": "Czech Republic"
+  }
 }

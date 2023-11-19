@@ -58,15 +58,15 @@ onUnmounted(() => {
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
             <h1 class="text-white">
-              Pojďte nás poznat <span class="text-white" id="typed"></span>
+              {{ $t('aboutus.header.title') }} <span class="text-white" id="typed"></span>
             </h1>
             <div id="typed-strings">
-              <h1>víc</h1>
-              <h1>blíž</h1>
-              <h1>zdravě</h1>
+              <h1>{{ $t('aboutus.header.span1') }}</h1>
+              <h1>{{ $t('aboutus.header.span2') }}</h1>
+              <h1>{{ $t('aboutus.header.span3') }}</h1>
             </div>
             <p class="lead mb-4 text-white opacity-8">
-              Jsme firma, která se stará o vaše zdraví
+              {{ $t('aboutus.header.underTitle') }}
             </p>
           </div>
         </div>

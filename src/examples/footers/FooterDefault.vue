@@ -1,54 +1,3 @@
-<script setup>
-defineProps({
-  brand: {
-    type: Object,
-    name: String,
-    logo: String,
-    route: "",
-    default: () => ({
-      name: "Gaudium 2022",
-      route: "/",
-    }),
-  },
-  menus: {
-    type: Array,
-    name: String,
-    items: {
-      type: Array,
-      name: String,
-      href: String,
-    },
-    default: () => [
-      {
-        name: "Kde nás najdete",
-        items: [
-          {
-            name: "Guadium 2022 s.r.o.",
-          },
-          {
-            name: "Moskevská 14",
-          },
-          {
-            name: "Most",
-          },
-          { name: "Česká republika" },
-        ],
-      },
-      {
-        name: "{{ $t('nav.contact') }}",
-        items: [
-          {
-            name: "gaudium2022@seznam.cz",
-          },
-          {
-            name: "+420 777 857 773",
-          },
-        ],
-      },
-    ],
-  },
-});
-</script>
 <template>
   <footer class="footer pt-5 mt-5">
     <div class="container">
@@ -57,7 +6,7 @@ defineProps({
           <div>
             <br />
             <br />
-            <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
+            <h6 class="font-weight-bolder mb-4">{{ i18n.t('footer.companyName') }}</h6>
           </div>
         </div>
         <div
@@ -65,11 +14,11 @@ defineProps({
           v-for="{ name, items } of menus"
           :key="name"
         >
-          <h6 class="text-sm">{{ name }}</h6>
+          <h6 class="text-sm">{{ i18n.t(name) }}</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item" v-for="item of items" :key="item.name">
               <a class="nav-link" :href="item.href" target="_blank">
-                {{ item.name }}
+                {{ renderTranslatedText(item.name) }}
               </a>
             </li>
           </ul>
@@ -89,3 +38,59 @@ defineProps({
     </div>
   </footer>
 </template>
+
+<script setup>
+import { defineProps } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const i18n = useI18n();
+
+defineProps({
+  brand: {
+    type: Object,
+    default: () => ({
+      name: "Gaudium 2022",
+      route: "/",
+    }),
+  },
+  menus: {
+    type: Array,
+    default: () => [
+      {
+        name: 'footer.location',
+        items: [
+          {
+            name: 'footer.companyName',
+          },
+          {
+            name: 'footer.address',
+          },
+          {
+            name: 'footer.city',
+          },
+          { name: 'footer.country' },
+        ],
+      },
+      {
+        name: 'footer.contact',
+        items: [
+          {
+            name: 'gaudium2022@seznam.cz',
+            href: 'mailto:gaudium2022@seznam.cz',
+          },
+          {
+            name: '+420777857773',
+            href: 'tel:+420777857773',
+          },
+        ],
+      },
+    ],
+  },
+});
+
+const renderTranslatedText = (key) => {
+  return key.includes('email') || key.includes('phone')
+    ? i18n.t(key).replace('{0}', `<span>${i18n.t(key, { value: '' })}</span>`)
+    : i18n.t(key);
+};
+</script>

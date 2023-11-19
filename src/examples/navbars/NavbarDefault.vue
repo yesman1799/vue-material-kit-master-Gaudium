@@ -2,6 +2,7 @@
 import { RouterLink } from "vue-router";
 import { ref, watch } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
+import LanguageSwitcher from "../../components/LanguageSwitcher.vue";
 
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
@@ -16,29 +17,29 @@ const props = defineProps({
     default: () => ({
       route: "/",
       color: "bg-gradient-success",
-      label: "nav.contact"
-    })
+      label: "nav.contact",
+    }),
   },
   transparent: {
     type: Boolean,
-    default: false
+    default: false,
   },
   light: {
     type: Boolean,
-    default: false
+    default: false,
   },
   dark: {
     type: Boolean,
-    default: false
+    default: false,
   },
   sticky: {
     type: Boolean,
-    default: false
+    default: false,
   },
   darkText: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 
 // set arrow  color
@@ -97,7 +98,7 @@ watch(
       'my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4':
         props.sticky,
       'navbar-light bg-white py-3': props.light,
-      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
+      'navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
     }"
   >
     <div
@@ -121,10 +122,22 @@ watch(
       >
         Guadium 2022
       </RouterLink>
-      <div
-        class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
-        id="navigation"
+      <LanguageSwitcher/>
+      <!-- Toggle button for smaller screens -->
+      <button
+        class="navbar-toggler btn btn-success"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
         <ul class="navbar-nav navbar-nav-hover ms-auto">
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
@@ -140,7 +153,7 @@ watch(
                 :class="getTextColor()"
                 >dashboard</i
               >
-              {{ $t('nav.slides') }}
+              {{ $t("nav.slides") }}
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -163,13 +176,13 @@ watch(
                       <div
                         class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
                       >
-                        {{ $t('nav.options') }}
+                        {{ $t("nav.options") }}
                       </div>
                       <RouterLink
                         :to="{ name: 'about' }"
                         class="dropdown-item border-radius-md"
                       >
-                        <span>{{ $t('nav.about') }}</span>
+                        <span>{{ $t("nav.about") }}</span>
                       </RouterLink>
                       <!-- <RouterLink
                         :to="{ name: 'author' }"
@@ -185,20 +198,20 @@ watch(
                 <div
                   class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
                 >
-                {{ $t('nav.options')}}
+                  {{ $t("nav.options") }}
                 </div>
                 <RouterLink
                   :to="{ name: 'about' }"
                   class="dropdown-item border-radius-md"
                 >
-                  <span>{{ $t('nav.options') }}</span>
+                  <span>{{ $t("nav.about") }}</span>
                 </RouterLink>
-                <RouterLink
+                <!-- <RouterLink
                   :to="{ name: 'author' }"
                   class="dropdown-item border-radius-md"
                 >
                   <span>Naše produkty</span>
-                </RouterLink>
+                </RouterLink> -->
               </div>
             </div>
           </li>
@@ -426,7 +439,7 @@ watch(
               class="btn btn-sm mb-0"
               :class="action.color"
               onclick="smoothToPricing('pricing-soft-ui')"
-              >{{ $t('nav.contact') }}</a
+              >{{ $t("nav.contact") }}</a
             >
           </li>
         </ul>
