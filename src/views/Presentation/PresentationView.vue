@@ -75,7 +75,6 @@ onUnmounted(() => {
     </div>
   </Header>
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <PresentationCounter />
     <PresentationInformation />
     <DisplayImages />
     <h2 class="width-100 text-center">{{ $t('form.title') }}</h2>
